@@ -53,5 +53,5 @@ Otherwise, feel free to submit a pull request.
 <br>
 
 <p align='center'>
-<em> Made with 💻 in 🇸🇬 by Brahm Capoor </em>
+<em> Made with </em> 💻 <em> in </em> 🇸🇬 <em> by Brahm Capoor </em>
 </p>
