@@ -42,9 +42,11 @@ Obviously, of paramount importance right now is just getting it up and running.
 
 In the future, I think it might be cool to make this a web app because while using the terminal is badass, I think this is something other people would like to use. That said, doing this will probably involve learning Django/Flask and a significant restructuring, so it's a long term goal.
 
-## contact
+## contact and contributing
 
 If you have ideas or questions, feel free to ping me at brahm@stanford.edu
+
+Otherwise, feel free to submit a pull request.
 
 <br>
 <br>
