@@ -26,12 +26,12 @@ I'm on the lookout for some way to procure some training data so I could use som
 1) Clone the project
 2) `cd` to the `src` directory and create the file `keys.py`
 3) [Create a reddit app](https://ssl.reddit.com/prefs/apps). You'll need an account for this part. The app type is a script.
-4) Get the client id (that's the bit below your app's name on the website), the client secret fill out `keys.py` as such:
+4) Get the client id (that's the bit below your app's name on the website), the client secret and fill out `keys.py` as such:
 
 ```python
 client_id = "CLIENT ID HERE"
 client_secret = "CLIENT SECRET HERE"
-user_agent = "python:redditchatbot:0.0.1 (by /u/YOUR REDDIT USERNAME HERE)."
+user_agent = "python:PROJECT_NAME_HERE:VERSION_NUMBER_HERE (by /u/YOUR REDDIT USERNAME HERE)."
 ```
 
 Obviously, make the appropriate substitutions.
