@@ -4,6 +4,13 @@ import string
 
 class SentimentClassifier():
 
+    """
+    A simple Sentiment Classifier
+
+    TODO:
+    - Negation
+    """
+
     def __init__(self):
         self.load_sentiment_data()
 
