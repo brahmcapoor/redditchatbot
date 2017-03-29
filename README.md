@@ -25,7 +25,7 @@ I'm on the lookout for some way to procure some training data so I could use som
 #### building a corpus
 Right now, the bot asks for a specific subreddit to talk to and a conversation topic. It then searches that subreddit for the most relevant posts to do with that topic and builds a corpus from the top-level comments in those posts. This is _okay_ for an initial attempt, but I'd ideally like to be able to speak to reddit as a whole as well. You can do that right now by specifying r/all as the subreddit you want to talk to, but that's a little hacky.
 
-#### sentence generation
+#### sentence generation and conversation
 For now, I've just got markov chains being built from a corpus, and regenerated until one with the same sentiment as the prevailing sentiment about that topic is generated. This leads to some pretty hilarious insights:
 
 ```
@@ -36,7 +36,7 @@ You: Christopher Nolan
 RedditBot: I saw Interstellar last night and I thought it felt kind of off, considering the rest of the movie itself is a magic trick in itself.
 ```
 
-That said, the bot isn't currently contextually aware so I'm going to revamp this. My two ideas right now are to use child comments as well and to hardcode some more specific kinds of responses. 
+That said, the bot isn't currently contextually aware (technically, it doesn't even respond to the user so much as it does wait for the user to finish typing) so I'm going to revamp this. My two ideas right now are to use child comments as well and to hardcode some more specific kinds of responses. 
 
 ## setup
 
