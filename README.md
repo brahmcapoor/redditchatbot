@@ -21,6 +21,23 @@ I've got a basic sentiment analysis module up and running (many thanks to the [M
 
 I'm on the lookout for some way to procure some training data so I could use something like Naive Bayes or Logistic Regression, but for now this seems sufficient. If all else fails, I might just bootstrap some data myself. Suggestions for good ways to do this would be awesome.
 
+
+#### building a corpus
+Right now, the bot asks for a specific subreddit to talk to and a conversation topic. It then searches that subreddit for the most relevant posts to do with that topic and builds a corpus from the top-level comments in those posts. This is _okay_ for an initial attempt, but I'd ideally like to be able to speak to reddit as a whole as well. You can do that right now by specifying r/all as the subreddit you want to talk to, but that's a little hacky.
+
+#### sentence generation
+For now, I've just got markov chains being built from a corpus, and regenerated until one with the same sentiment as the prevailing sentiment about that topic is generated. This leads to some pretty hilarious insights:
+
+```
+RedditBot: Hi! Which subreddit would you like to talk to?
+You: movies
+RedditBot: Cool! What do you want to talk about?
+You: Christopher Nolan
+RedditBot: I saw Interstellar last night and I thought it felt kind of off, considering the rest of the movie itself is a magic trick in itself.
+```
+
+That said, the bot isn't currently contextually aware so I'm going to revamp this. My two ideas right now are to use child comments as well and to hardcode some more specific kinds of responses. 
+
 ## setup
 
 1) Clone the project
@@ -35,6 +52,8 @@ user_agent = "python:PROJECT_NAME_HERE:VERSION_NUMBER_HERE (by /u/YOUR REDDIT US
 ```
 
 Obviously, make the appropriate substitutions.
+
+5) In the same directory, run `python main.py`
 
 ## the future
 
