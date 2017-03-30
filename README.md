@@ -36,7 +36,7 @@ You: Christopher Nolan
 RedditBot: I saw Interstellar last night and I thought it felt kind of off, considering the rest of the movie itself is a magic trick in itself.
 ```
 
-That said, the bot isn't currently contextually aware (technically, it doesn't even respond to the user so much as it does wait for the user to finish typing) so I'm going to revamp this. My two ideas right now are to use child comments as well and to hardcode some more specific kinds of responses. 
+That said, the bot isn't currently contextually aware (technically, it doesn't even respond to the user so much as it does wait for the user to finish typing) so I'm going to revamp this. My two ideas right now are to use child comments as well and to hardcode some more specific kinds of responses.
 
 ## setup
 
@@ -53,7 +53,7 @@ user_agent = "python:PROJECT_NAME_HERE:VERSION_NUMBER_HERE (by /u/YOUR REDDIT US
 
 Obviously, make the appropriate substitutions.
 
-5) In the same directory, run `python main.py`
+5) In the same directory, run `python main.py`. Add an optional `-d` flag for debug mode (increases verbosity)
 
 ## the future
 
